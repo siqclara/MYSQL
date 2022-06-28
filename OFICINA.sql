@@ -211,6 +211,12 @@ INSERT INTO ITENS_OS (idServico, idOS) values (1, 1);
    select s.nomeServico, c.nomeCliente from Servico s INNER JOIN ITENS_OS i ON (i.idServico = s.idServico) INNER JOIN OS o ON (o.idOS = i.idOS) INNER JOIN Cliente c ON (c.idCliente = o.idCliente);
 
 
+SELECT
+  count(nomeFuncionario)
+FROM
+  FUNCIONARIO;
+  
+SELECT nomeCliente as Clientela FROM CLIENTE;
 
 
 
